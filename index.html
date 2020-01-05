@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>食堂点餐系统</title>
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body class="bg">
+        <div class="nav header">
+                <img src="./image/title.png" width="490" height="50">
+                <ul style="float:right;">
+                    <li><a href="order.html">我的订单</a></li>
+                    <li><a href="chart.html">订单统计</a></li>
+                    <li><a href="index.html">网站首页</a></li>
+                </ul>
+        </div>
+        
+        <div class="welcomepage display">
+            <p style="margin: 8px;">欢迎来到食堂点餐系统</p>
+            <a class="next" href="#" style="margin-top: 8px; margin-bottom: 0; color: #FFFFFF; text-decoration: none;">点击此处以开始点餐</a>
+        </div>
+
+        <div class="menunav hidden">
+            <ul style="float:left">
+                <li><a href="#" class="menu-items mainfood">主食</a></li>
+                <li><a href="#" class="menu-items Chinesefood">小炒</a></li>
+                <li><a href="#" class="menu-items snacks">小吃</a></li>
+                <li><a href="#" class="menu-items bavrage">饮料</a></li>
+                <li><a href="#" class="menu-items countrank">当日热卖</a></li>
+                <li><a href="#" class="menu-items recommended">推荐菜品</a></li>
+            </ul>
+        </div>
+        <div class="foodpage">
+            <div class="mainfood hidden">
+                <ul>
+                    <li class="fl-item" id='no1'>
+                        <div class="foodimg"><img src="./image/ED13A840E3589E7E9031917C4640E668.webp" width="220" height="220"></div>
+                        <div class="foodprice">
+                            <strong>
+                                <i>￥7</i>
+                            </strong>
+                        </div>
+                        <div class="foodtitle">
+                            <p class="name">蛋炒饭</p>
+                            <div class="foodinfo">
+                                <p>热量：⭐⭐⭐</p>
+                                <p>辣度：⭐</p>
+                                <a class="order" href="javascript:;">
+                                        <i></i>
+                                        点餐
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fl-item" id='no2'>
+                            <div class="foodimg"><img src="./image/02C210409A85AABF1153BE9F990C7F7B.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥6</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">甜水面</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐</p>
+                                    <p>辣度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fl-item" id='no3'>
+                                <div class="foodimg"><img src="./image/393B3B6A4684C48CC356FC187BEA37FF.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥12</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">盖浇饭</p>
+                                    <div class="foodinfo">
+                                        <p >热量：⭐⭐⭐</p>
+                                        <p >辣度：⭐</p>
+                                        <a class="order" href="javascript:;" >
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="fl-item" id='no4'>
+                                <div class="foodimg"><img src="./image/A6B7C5C0C3D0B8C8130DAB3E0C125031.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥8</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">红油水饺</p>
+                                    <div class="foodinfo">
+                                        <p >热量：⭐⭐⭐</p>
+                                        <p >辣度：⭐⭐</p>
+                                        <a class="order" href="javascript:;" >
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="fl-item" id='no5'>
+                                <div class="foodimg"><img src="./image/9AE7C27D8FF420D72F0EA3A3F3C875CF.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥10</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">兰州拉面</p>
+                                    <div class="foodinfo">
+                                        <p >热量：⭐⭐⭐</p>
+                                        <p >辣度：⭐⭐</p>
+                                        <a class="order" href="javascript:;" >
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                </ul>
+            </div>
+            <div class="Chinesefood hidden">
+                <ul>
+                        <li class="fl-item" id='no6'>
+                                <div class="foodimg"><img src="./image/8E1A7858BFC5E8B65829DD1895EC307B.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥5</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">炒青菜</p>
+                                    <div class="foodinfo">
+                                        <p>热量：⭐</p>
+                                        <p>辣度：⭐</p>
+                                        <a class="order" href="javascript:;">
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="fl-item" id='no7'>
+                                <div class="foodimg"><img src="./image/096F7892272D3E133A949EED1749C95A.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥20</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">团团圆圆</p>
+                                    <div class="foodinfo">
+                                        <p>热量：⭐⭐⭐⭐</p>
+                                        <p>辣度：⭐</p>
+                                        <a class="order" href="javascript:;">
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="fl-item" id='no8'>
+                                <div class="foodimg"><img src="./image/1245D8C44771C598724C9360478CDA78.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥26</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">大盘鸡</p>
+                                    <div class="foodinfo">
+                                        <p>热量：⭐⭐⭐⭐</p>
+                                        <p>辣度：⭐⭐</p>
+                                        <a class="order" href="javascript:;">
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="fl-item" id='no9'>
+                                <div class="foodimg"><img src="./image/9413E15976B6A323D04BE3214CE0D4F3.webp" width="220" height="220"></div>
+                                <div class="foodprice">
+                                    <strong>
+                                        <i>￥16</i>
+                                    </strong>
+                                </div>
+                                <div class="foodtitle">
+                                    <p class="name">土豆烧鸡</p>
+                                    <div class="foodinfo">
+                                        <p>热量：⭐⭐⭐</p>
+                                        <p>辣度：⭐⭐</p>
+                                        <a class="order" href="javascript:;">
+                                                <i></i>
+                                                点餐
+                                        </a>
+                                    </div>
+                                </div>
+                        </li>
+                </ul>
+            </div>
+            <div class="snacks hidden">
+                <ul>
+                    <li class="fl-item" id='no10'>
+                            <div class="foodimg"><img src="./image/5C882B63DF29728904D8B214E803921A.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥15</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">芝士焗饭</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐⭐⭐</p>
+                                    <p>辣度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no11'>
+                            <div class="foodimg"><img src="./image/83D0133407E34206EA69A0C2821FAE81.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥12</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">烤脑花</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐⭐</p>
+                                    <p>辣度：⭐⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no12'>
+                            <div class="foodimg"><img src="./image/099F26D76F7AB4CE078B39A948CA76E7.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥12</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">烤翅</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐⭐</p>
+                                    <p>辣度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no13'>
+                            <div class="foodimg"><img src="./image/C602A02886CAFC737189AC1847EED5C8.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥8</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">烤土豆</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐</p>
+                                    <p>辣度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no14'>
+                            <div class="foodimg"><img src="./image/D3E864094282A7C983FB4277F40CCF9A.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥4</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">餐后水果</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐</p>
+                                    <p>辣度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no15'>
+                            <div class="foodimg"><img src="./image/F4B2435042E8615C80E68AE09A5B7429.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥6</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">冰粉</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐</p>
+                                    <p>辣度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bavrage hidden">
+                <ul>
+                    <li class="fl-item" id='no16'>
+                            <div class="foodimg"><img src="./image/DC45B62C24C4506FCB246798DBC83D71.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥4</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">牛奶</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐</p>
+                                    <p>甜度：⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no17'>
+                            <div class="foodimg"><img src="./image/8A4D385BF06D1CF1A4F25B412B9E301C.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥5</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">橙汁</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐</p>
+                                    <p>甜度：⭐⭐⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="fl-item" id='no18'>
+                            <div class="foodimg"><img src="./image/B08709449A98A150F2B7267FFA1F5596.webp" width="220" height="220"></div>
+                            <div class="foodprice">
+                                <strong>
+                                    <i>￥8</i>
+                                </strong>
+                            </div>
+                            <div class="foodtitle">
+                                <p class="name">奶茶</p>
+                                <div class="foodinfo">
+                                    <p>热量：⭐⭐⭐⭐⭐</p>
+                                    <p>甜度：⭐⭐⭐⭐⭐</p>
+                                    <a class="order" href="javascript:;">
+                                            <i></i>
+                                            点餐
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="countrank hidden">
+                <ul>
+                </ul>
+            </div>
+            <div class="recommended hidden">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="shopingCar hidden">
+                <div class="submit">
+                    <a href="#" class="submit1">提交</a>
+                </div>
+                <div class="kuangk">
+                    <a>我的菜单</a>
+                </div>
+                <div class="lieb">
+                    
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,193 @@
+@keyframes fadein{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes fadeout{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.foodtitle p{
+    margin-bottom: 0;
+    margin-top: 8px;
+    color: #ffffff;
+}
+body{
+    margin: 0;
+}
+
+.nav li{
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+    margin:0 2rem 0;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+li a{
+    display: block;
+    width: 4rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+li a:hover{
+    color: #daa520;
+    transition: .5s ease-in-out;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+.header{
+    border-bottom: 1px solid hsla(0,0%,93%,.2);
+    background: linear-gradient(180deg, rgba(0,0,0, .3) 0,rgba(0,0,0, .2) 100%, transparent);
+}
+
+.foodpage .mainfood{
+    margin-left: 10rem;
+}
+
+.menunav ul{
+    margin-left: 0;
+    padding-left: 3rem;
+    width: 10rem;
+    border-bottom: solid .5px hsla(0,0%,93%,.2);
+    text-align: center;
+}
+
+.menunav ul li{
+    color: #ffffff;
+    padding: .2rem;
+}
+
+.foodimg{
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.foodprice{
+    position: relative;
+    text-align: left;
+    color: goldenrod;
+}
+
+.fl-item{
+    float: left;
+    width: 240px;
+    height: 410px;
+}
+
+.bg{
+    background: url("../image/background.png") fixed;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.bg:before{
+    content: "";
+    width:100%;
+    height:200%;
+    position: absolute;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+
+}
+
+.order{
+    font-size: small;
+    text-align: left;
+    padding: 8px 0;
+}
+
+.foodtitle > div{
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+.foodtitle:hover > div{
+    max-height: 100px;
+}
+
+.hidden{
+    animation: fadeout 1s ease;
+    display: none;
+}
+
+.display{
+    animation: fadein 1s ease;
+    display: block;
+}
+
+.display1{
+    animation: fadein 1s ease;
+    display: block;
+}
+
+.welcomepage{
+    font-family: microsoft yahei; 
+    font-size: xx-large;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25rem;
+}
+.shopingCar{
+    width: 350px;
+    height:100%;
+    position: fixed;
+    top: 0;
+    right:-310px;
+    background: linear-gradient(180deg, rgba(0,0,0, .8) 0,rgba(0,0,0, .2) 100%, transparent);;
+    opacity: 0.85;
+    margin-top: 55px;
+    overflow: scroll
+}
+.kuangk{
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0, .5) 0,rgba(0,0,0, .2) 100%, transparent);;
+    opacity: 1;
+    position:relative;
+    float:left;
+}
+.kuangk a{
+    color: #FFFFFF;
+    font-size: 12px;
+    width:12px;
+    position:absolute;
+    display:block;
+    background: goldenrod;
+    opacity: 1;
+    top:50%;
+    left:0;
+    padding:10px 14px;
+    margin-top:-42px;
+    cursor:pointer;
+}
+
+.shopingCar .submit{
+    width: 293px;
+    height: 50px;
+    background: goldenrod;
+    top: 50%;
+    float: right;
+}
+
+.submit a{
+    color: #ffffff;
+    font-size: 24px;
+    width: 50px;
+    text-decoration: none;
+    position: absolute;
+    display: block; 
+    padding: 9px 120px;
+}
